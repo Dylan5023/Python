@@ -93,6 +93,13 @@ class NodeMgmt:
                     return
                 else:
                     node = node.next
+    def search_node(self, data):
+        node = self.head
+        if node.data == data:
+            return node
+        else:
+            node = node.next
+        
             
 
 linkedlist1 = NodeMgmt(0)
@@ -103,3 +110,4 @@ for data in range(0,10):
 linkedlist1.desc()
 
 
+ 
